@@ -109,17 +109,7 @@ const ChatWindow = ({
               />
             </Expand>
             <Expand delay={0.9} type="spring">
-              <ChatMessage
-                message={{
-                  type: "system",
-                  value: `📢 ${t("provide-api-key-via-settings")}`,
-                }}
-              />
-              {showDonation && (
-                <Expand delay={0.7} type="spring">
-                  <DonationMessage showWeChatPay={showWeChatPay} />
-                </Expand>
-              )}
+              {showDonation && <Expand delay={0.7} type="spring" />}
             </Expand>
           </>
         )}

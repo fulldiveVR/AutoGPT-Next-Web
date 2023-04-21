@@ -148,36 +148,6 @@ const Drawer = ({
           />
           <DrawerItem icon={<FaCog />} text="settings" onClick={showSettings} />
           <DrawerItem
-            icon={<FaWeixin />}
-            text="weChat"
-            target="_blank"
-            onClick={showWeChat}
-          />
-          <DrawerItem
-            icon={<FaQq />}
-            text="QQ"
-            target="_blank"
-            onClick={showQQ}
-          />
-          <DrawerItem
-            icon={<FaGlobe />}
-            text="knowlege-planet"
-            target="_blank"
-            onClick={showKnowledgePlanet}
-          />
-          <DrawerItem
-            icon={<FaDiscord />}
-            text="Discord"
-            href="https://discord.gg/Xnsbhg6Uvd"
-            target="_blank"
-          />
-          <DrawerItem
-            icon={<FaGithub />}
-            text="GitHub"
-            href="https://github.com/Dogtiti/AutoGPT-Next-Web"
-            target="_blank"
-          />
-          <DrawerItem
             icon={<FaLanguage />}
             text="language"
             onClick={onToggleLanguageClick}
