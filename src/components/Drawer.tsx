@@ -102,15 +102,6 @@ const Drawer = ({
         )}
       >
         <div className="flex flex-col gap-1 overflow-hidden">
-          <div className="mb-2 flex justify-center gap-2">
-            {t("my-agents")}
-            <button
-              className="z-40 rounded-md border-2 border-white/20 bg-zinc-900 p-2 text-white hover:bg-zinc-700 md:hidden"
-              onClick={toggleDrawer}
-            >
-              <FaBars />
-            </button>
-          </div>
           <ul className="flex flex-col gap-2 overflow-auto">
             {userAgents.map((agent, index) => (
               <DrawerItem
@@ -122,7 +113,6 @@ const Drawer = ({
               />
             ))}
 
-            {status === "unauthenticated" && <div>{t("sign-in")}</div>}
             {status === "authenticated" && userAgents.length === 0 && (
               <div>{t("create-agent")}</div>
             )}
