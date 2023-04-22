@@ -1,11 +1,7 @@
 import axios from "axios";
 import type { ModelSettings } from "../utils/types";
 import AgentService from "../services/agent-service";
-import {
-  DEFAULT_MAX_LOOPS_CUSTOM_API_KEY,
-  DEFAULT_MAX_LOOPS_FREE,
-  DEFAULT_MAX_LOOPS_PAID,
-} from "../utils/constants";
+import { DEFAULT_MAX_LOOPS_CUSTOM_API_KEY } from "../utils/constants";
 import type { Session } from "next-auth";
 import type { Message } from "../types/agentTypes";
 import { env } from "../env/client.mjs";
@@ -130,13 +126,7 @@ class AutonomousAgent {
   }
 
   private maxLoops() {
-    const defaultLoops = !!this.session?.user.subscriptionId
-      ? DEFAULT_MAX_LOOPS_PAID
-      : DEFAULT_MAX_LOOPS_FREE;
-
-    return !!this.modelSettings.customApiKey
-      ? this.modelSettings.customMaxLoops || DEFAULT_MAX_LOOPS_CUSTOM_API_KEY
-      : defaultLoops;
+    return DEFAULT_MAX_LOOPS_CUSTOM_API_KEY;
   }
 
   async getInitialTasks(): Promise<string[]> {
@@ -225,10 +215,7 @@ class AutonomousAgent {
   sendLoopMessage() {
     this.sendMessage({
       type: "system",
-      value:
-        this.modelSettings.customApiKey !== ""
-          ? "errors.loop-with-filled-customApiKey"
-          : "errors.loop-with-empty-customApiKey",
+      value: "errors.loop-with-empty-customApiKey",
     });
   }
 

@@ -146,7 +146,6 @@ const Drawer = ({
             text="help"
             onClick={showHelp}
           />
-          <DrawerItem icon={<FaCog />} text="settings" onClick={showSettings} />
           <DrawerItem
             icon={<FaLanguage />}
             text="language"
