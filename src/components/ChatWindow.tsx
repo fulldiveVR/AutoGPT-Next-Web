@@ -272,28 +272,6 @@ const ChatMessage = ({ message }: { message: Message }) => {
   );
 };
 
-const DonationMessage = ({ showWeChatPay }: { showWeChatPay?: () => void }) => {
-  const { t } = useTranslation(["chat", "common"]);
-  return (
-    <div className="mx-2 my-1 flex flex-col gap-2 rounded-lg border-[2px] border-white/10 bg-blue-500/20 p-1 text-center font-mono hover:border-[#1E88E5]/40 sm:mx-4 sm:p-3 sm:text-base md:flex-row">
-      <div className="max-w-none flex-grow">
-        <Trans i18nKey="donate-help" ns="chat">
-          💝️ Help support the advancement of AutoGPT Next Web. 💝 <br /> Please
-          consider donating help fund our high infrastructure costs.
-        </Trans>
-      </div>
-      <div className="flex items-center justify-center">
-        <Button
-          className="sm:text m-0 rounded-full text-sm "
-          onClick={showWeChatPay}
-        >
-          {t("donate-now")} 🚀
-        </Button>
-      </div>
-    </div>
-  );
-};
-
 const getMessageIcon = (message: Message) => {
   switch (message.type) {
     case "goal":

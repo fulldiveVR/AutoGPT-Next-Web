@@ -15,11 +15,11 @@ const DefaultLayout = (props: LayoutProps) => {
   return (
     <div className="flex flex-col bg-gradient-to-b from-[#2B2B2B] to-[#1F1F1F]">
       <Head>
-        <title>AutoGPT Next Web</title>
+        <title>ZZ</title>
         <meta name="description" content={description} />
         <meta
           property="og:title"
-          content="AutoGPT Next Web: Autonomous AI in your browser 🤖"
+          content="AIWAYZ: Autonomous AI in your browser 🤖"
         />
         <meta
           property="og:description"

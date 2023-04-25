@@ -177,13 +177,10 @@ const Home: NextPage = () => {
             >
               <div className="flex flex-row items-start shadow-2xl">
                 <span className="text-4xl font-bold text-[#C0C0C0] xs:text-5xl sm:text-6xl">
-                  Auto
+                  AI
                 </span>
                 <span className="text-4xl font-bold text-white xs:text-5xl sm:text-6xl">
-                  GPT.
-                </span>
-                <span className="text-4xl font-bold text-white xs:text-5xl sm:text-6xl">
-                  NextWeb
+                  WAYZ
                 </span>
               </div>
               <div className="mt-1 text-center font-mono text-[0.7em] font-bold text-white">
@@ -195,7 +192,9 @@ const Home: NextPage = () => {
               <ChatWindow
                 className="sm:mt-4"
                 messages={messages}
-                title={session?.user.subscriptionId ? proTitle : "AutoGPT"}
+                title={
+                  session?.user.subscriptionId ? proTitle : "AIWAYZ Terminal"
+                }
                 showDonation={
                   status != "loading" && !session?.user.subscriptionId
                 }
@@ -231,7 +230,7 @@ const Home: NextPage = () => {
                   disabled={agent != null}
                   onChange={(e) => setName(e.target.value)}
                   onKeyDown={(e) => handleKeyPress(e)}
-                  placeholder="AutoGPT"
+                  placeholder="AIWAYZ"
                 />
               </Expand>
               <Expand delay={1.3}>

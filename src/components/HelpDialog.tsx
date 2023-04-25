@@ -20,7 +20,7 @@ export default function HelpDialog({
     >
       <div className="text-md relative flex-auto p-2 leading-relaxed">
         <p>
-          <strong>AutoGPT</strong> {t("usage")} 🚀
+          <strong>AIWAYZ</strong> {t("usage")} 🚀
         </p>
         <div>
           <br />
