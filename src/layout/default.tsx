@@ -15,7 +15,7 @@ const DefaultLayout = (props: LayoutProps) => {
   return (
     <div className="flex flex-col bg-gradient-to-b from-[#2B2B2B] to-[#1F1F1F]">
       <Head>
-        <title>ZZ</title>
+        <title>AIWAYZ</title>
         <meta name="description" content={description} />
         <meta
           property="og:title"
