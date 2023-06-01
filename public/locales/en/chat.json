@@ -1,7 +1,7 @@
 {
   "create-agent-and-deploy": "> Create an agent by adding a name / goal, and hitting deploy!",
   "provide-api-key-via-settings": "You can first provide your own OpenAI API key via the settings tab!",
-  "donate-help": " 💝️ Help support the advancement of AIWAYZ Next Web. 💝 <br /> Please consider donating help fund our high infrastructure costs.",
+  "donate-help": " 💝️ Help support the advancement of AIWIZE Next Web. 💝 <br /> Please consider donating help fund our high infrastructure costs.",
   "donate-now": "Donate Now",
   "restart": "Restart if this takes more than 30 seconds",
   "errors": {

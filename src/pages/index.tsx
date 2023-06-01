@@ -180,7 +180,7 @@ const Home: NextPage = () => {
                   AI
                 </span>
                 <span className="text-4xl font-bold text-white xs:text-5xl sm:text-6xl">
-                  WAYZ
+                  WIZE
                 </span>
               </div>
               <div className="mt-1 text-center font-mono text-[0.7em] font-bold text-white">
@@ -193,7 +193,7 @@ const Home: NextPage = () => {
                 className="sm:mt-4"
                 messages={messages}
                 title={
-                  session?.user.subscriptionId ? proTitle : "AIWAYZ Terminal"
+                  session?.user.subscriptionId ? proTitle : "AIWIZE Terminal"
                 }
                 showDonation={
                   status != "loading" && !session?.user.subscriptionId
@@ -230,7 +230,7 @@ const Home: NextPage = () => {
                   disabled={agent != null}
                   onChange={(e) => setName(e.target.value)}
                   onKeyDown={(e) => handleKeyPress(e)}
-                  placeholder="AIWAYZ"
+                  placeholder="AIWIZE"
                 />
               </Expand>
               <Expand delay={1.3}>

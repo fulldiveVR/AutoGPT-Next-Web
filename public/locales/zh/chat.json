@@ -1,7 +1,7 @@
 {
   "create-agent-and-deploy": "> 添加名称/目标并部署，即可创建代理！",
   "provide-api-key-via-settings": "您可以在设置选项卡中提供自己的 OpenAI API 密钥！",
-  "donate-help": "💝️ 支持 AIWAYZ 的进步 💝<br />请考虑捐赠以资助我们高昂的基础设施成本。",
+  "donate-help": "💝️ 支持 AIWIZE 的进步 💝<br />请考虑捐赠以资助我们高昂的基础设施成本。",
   "donate-now": "现在捐助",
   "restart": "如果这需要超过 30 秒，请重新开始。",
   "errors": {
